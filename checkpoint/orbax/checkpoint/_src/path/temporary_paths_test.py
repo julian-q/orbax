@@ -13,6 +13,7 @@
 # limitations under the License.
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 from typing import Type
 import unittest
 from absl.testing import absltest

@@ -15,6 +15,7 @@
 """test cases for colossus snapshot."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 from unittest import mock
 
 from absl.testing import absltest

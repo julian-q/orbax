@@ -15,6 +15,7 @@
 """Utilities for working with threads and asyncio event loops."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import threading
 from typing import Awaitable, Generic, TypeVar
 

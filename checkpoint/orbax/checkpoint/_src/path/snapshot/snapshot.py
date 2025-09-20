@@ -16,6 +16,7 @@
 
 import abc
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import time
 
 from absl import logging

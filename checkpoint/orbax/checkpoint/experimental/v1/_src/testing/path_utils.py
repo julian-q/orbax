@@ -15,6 +15,7 @@
 """Utilities for working with paths in tests."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 from orbax.checkpoint.experimental.v1._src.path import types as path_types
 
 Path = path_types.Path

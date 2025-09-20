@@ -15,6 +15,7 @@
 """Functions for loading metadata from a checkpoint."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 from typing import Any
 
 from etils import epath

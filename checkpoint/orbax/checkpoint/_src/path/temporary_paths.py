@@ -19,6 +19,7 @@ or finalized paths.
 """
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 from typing import Iterable, Type
 
 from absl import logging

@@ -15,6 +15,7 @@
 """Utils for debugging local checkpoints with missing chunks."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 from typing import Any
 from absl import logging
 from etils import epath

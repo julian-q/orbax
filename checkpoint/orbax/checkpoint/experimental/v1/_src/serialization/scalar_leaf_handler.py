@@ -19,6 +19,7 @@ deserialization for scalar values.
 """
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 from typing import Awaitable, Sequence, Type
 
 from absl import logging

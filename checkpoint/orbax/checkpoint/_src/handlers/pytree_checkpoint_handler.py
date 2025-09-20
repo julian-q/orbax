@@ -22,6 +22,7 @@ can be customized, and is delegated to the :py:class:`.TypeHandler` class.
 from __future__ import annotations
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import dataclasses
 import json
 import re

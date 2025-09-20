@@ -26,6 +26,7 @@ always be called across all processes within the primary slice.
 """
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import collections
 import dataclasses
 import functools

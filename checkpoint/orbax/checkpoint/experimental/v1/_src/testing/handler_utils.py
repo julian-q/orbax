@@ -17,6 +17,7 @@
 from __future__ import annotations
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import dataclasses
 import json
 from typing import Any, Awaitable, Generic, Type, TypeVar

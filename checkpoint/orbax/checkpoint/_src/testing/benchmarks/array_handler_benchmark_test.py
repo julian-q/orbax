@@ -13,6 +13,7 @@
 # limitations under the License.
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 from collections.abc import Sequence
 import dataclasses
 from unittest import mock

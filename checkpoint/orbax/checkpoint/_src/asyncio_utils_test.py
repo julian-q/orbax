@@ -15,6 +15,7 @@
 """Tests for asyncio_utils module."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import functools
 import timeit
 

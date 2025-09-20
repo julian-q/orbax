@@ -15,6 +15,7 @@
 """Array serialization and deserialization."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import collections
 from collections.abc import Mapping
 import contextlib

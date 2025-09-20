@@ -15,6 +15,7 @@
 """Provides helper async functions."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 from typing import Any, Coroutine, TypeVar
 import nest_asyncio
 

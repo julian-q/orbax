@@ -15,6 +15,7 @@
 """Storage for `array_metadata.ArrayMetadata` (not value.ArrayMetadata)."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import json
 import threading
 import time

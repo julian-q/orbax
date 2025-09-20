@@ -53,6 +53,7 @@ Configuration can be done in the following way::
 from __future__ import annotations
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import pickle
 import threading
 import time

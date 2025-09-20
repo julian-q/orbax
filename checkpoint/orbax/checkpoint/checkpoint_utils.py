@@ -15,6 +15,7 @@
 """High-level checkpoint utils provided for user convenience."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import contextlib
 import time
 from typing import Any, Callable, Iterator, Optional

@@ -15,6 +15,7 @@
 """Defines free-function interface for loading."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import time
 from typing import Any
 

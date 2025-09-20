@@ -15,6 +15,7 @@
 """Utilities for processing paths in asynchronous contexts."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 from typing import Iterable
 from orbax.checkpoint._src.futures import future
 from orbax.checkpoint._src.futures import synchronization

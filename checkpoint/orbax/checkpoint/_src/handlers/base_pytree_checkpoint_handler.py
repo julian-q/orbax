@@ -22,6 +22,7 @@ customized, and is delegated to the `TypeHandler` class.
 from __future__ import annotations
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import dataclasses
 import functools
 import json

@@ -19,6 +19,7 @@
 from __future__ import annotations
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 from collections.abc import Sequence
 from concurrent import futures
 import contextlib

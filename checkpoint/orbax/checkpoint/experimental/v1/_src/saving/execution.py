@@ -15,6 +15,7 @@
 """Internal utilities for saving whole and partial checkpoints."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import time
 from typing import Any, Awaitable, Iterable
 import uuid

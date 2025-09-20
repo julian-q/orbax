@@ -13,6 +13,7 @@
 # limitations under the License.
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import concurrent.futures
 import time
 from absl.testing import absltest

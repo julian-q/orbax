@@ -19,6 +19,7 @@ deserialization for numpy arrays
 """
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import dataclasses
 from typing import Awaitable, Protocol, Sequence
 

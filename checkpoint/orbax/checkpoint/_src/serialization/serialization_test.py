@@ -13,6 +13,7 @@
 # limitations under the License.
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import math
 import os
 import pathlib

@@ -15,6 +15,7 @@
 """A signaling client interface and implementations."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 from typing import Protocol, Sequence
 from orbax.checkpoint._src.futures import signaling_client
 

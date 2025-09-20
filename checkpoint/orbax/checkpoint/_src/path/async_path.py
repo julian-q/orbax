@@ -25,6 +25,7 @@ Should be implemented as::
 """
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 import os
 from typing import Any, Iterator
 from etils import epath

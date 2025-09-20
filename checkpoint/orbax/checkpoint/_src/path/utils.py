@@ -15,6 +15,7 @@
 """Utils for path constructs."""
 
 import asyncio
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 from collections.abc import AsyncIterable
 import os
 import time
