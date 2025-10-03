@@ -435,7 +435,7 @@ class Checkpointer(epy.ContextManager):
     self._manager._checkpointer = checkpointer  # pylint: disable=protected-access
     restored = self._manager.restore(
         step,
-        args=args,
+        # args=args,
     )
     return {k: v for k, v in zip(restored.keys(), restored.values())}
 
